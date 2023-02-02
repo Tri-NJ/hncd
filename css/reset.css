@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* 여백초기화 */
+body, div, dl, dd, dt, ul, li, ol, h1, h2, h3, h4, h5, h6, form, input, legend, textarea, select, fieldset, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* 링크 초기화 > 링크 글씨 파란 밑줄로 뜨는거 없앰 */
+a{
+    text-decoration: none; color: #273743;
+}
+
+/* 폰트 초기화(notosans로) */
+body, input, textarea, section, button, table{
+    /* 바디만 잡아도 되긴 함? */
+    font-family: 'Noto Sans KR', '나눔 고딕', 'Nanum Gothic', 'Malgun Gothic', '맑은 고딕', '돋움', Dotum, sans-serif;
+    /* 한글은 무조건 따옴표. 영문은 띄어쓰기 포함일때 따옴표. 띄어쓰기 없는 영문은 따옴표 안 넣어도 됨. */
+    font-size: 12px;
+}
+
+/* 블릿 기호 삭제 */
+ul, ol, ul{
+    list-style: none;
+}
+
+/* 폰트 굵기 초기화 */
+strong{
+    font-weight: normal;
+}
+
+/* 제목 스타일 초기화 */
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/* ir효과(눈에 안 보이는 글씨. 접근성 효과용) */
+.ir{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0; top: 0;
+    /* 영역 자체는 보이지 않게 하되 글씨는 읽을 것 */
+
+}
+
+/* 이탤릭체 초기화 */
+em, address {font-style: normal;}
